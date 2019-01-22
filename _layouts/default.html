@@ -14,9 +14,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 </head>
 <body>
+
+  <span id="arriba" style="position: absolute; top: 0"></span>
+  <div class="offcanvas js-menu sliding-panel-content">
+    <ul>
+      <li><a href="/">inicio</a></li>
+      <li><a href="/alojamiento">alojamiento</a></li>
+      <li><a href="/lago-puelo">lago puelo</a></li>
+      <li><a href="/ubicacion">ubicacion</a></li>
+      <li><a href="/contacto">contacto</a></li>
+    </ul>
+  </div>
+
   <div class="top-bar">
     <div class="top-bar-wrapper">
-      <a class="logo" href="#inicio">
+      <a class="logo" href="/">
         <img src="{{ site.baseurl }}/img/logo-la-estacion-hostel.svg" width="160px">
       </a>
       <nav>
@@ -27,7 +39,7 @@
         <a href="#contacto">contacto</a>
       </nav>
 
-      <button type="button" style="display: none" class="toogle-btn js-menu-trigger sliding-panel-button">
+      <button type="button" class="toogle-btn js-menu-trigger sliding-panel-button">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
     </div>
@@ -36,6 +48,8 @@
   <div class="main-container">
     {{content}}
   </div>
+
+  <div class="js-menu-screen sliding-panel-fade-screen"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
@@ -104,5 +118,6 @@
     })
   </script>
 
+  {% include offcanvas.html %}
 
 </body>
