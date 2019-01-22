@@ -16,6 +16,22 @@ body {
 	    padding: 0 0 0 0;
 } 
 
+.social {
+	position: fixed;
+	top: 30px;
+	right: 0;
+	background: #333;
+	padding: 15px;
+
+	a {
+		margin: 0 10px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 25px;
+
+	}
+}
+
 .top-bar {
 	//display: flex;
 	//background: #fff;
@@ -47,12 +63,14 @@ body {
 	nav {
 		
 		flex: 1;
-		text-align: right;
-
+		text-align: left;
+		position: fixed;
+		top: 120px;
+		width: 173px;
 
 
 		a {
-			margin: 5px 15px 0;
+			margin: 5px 15px 0 0;
 			text-decoration: none;
 			font-family: 'Alegreya Sans SC', sans-serif;
 			color: #fff;
@@ -82,7 +100,7 @@ body {
 
 			&:hover {
 				//border-bottom: 9px solid #157A40;
-				color: #333;
+				color: #f9f9f9;
 
 				&:after {
 					width: 100%;
@@ -93,7 +111,7 @@ body {
 
 
 			&:focus, &:active {
-				color: #999;
+				color: #f9f9f9;
 
 				&:after {
 					background-color: #11999e;
@@ -113,13 +131,14 @@ body {
 
 
 section {
-	min-height: 80vh;
+	min-height: 100vh;
 	padding: 2em;
 	
 	.inner-wrapper {
 		margin: 0 auto;
 		max-width: 1020px;
-		padding-top: 120px;
+		padding-top: 80px;
+		padding-left: 200px;
 	}
 
 	h2 {
@@ -159,7 +178,7 @@ section {
 		overflow: hidden;
 		max-width: 100%;
 		position: relative;
-		height: 610px;
+		height: 700px;
 	}
 }
 
@@ -340,6 +359,10 @@ section {
 			display: none;
 
 		}
+	}
+
+	.inner-wrapper {
+		padding-left: 0px !important;
 	}
 
 	.sec-hero {
