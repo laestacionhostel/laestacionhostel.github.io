@@ -130,7 +130,7 @@ section {
 .sec-hero {
 	background-image: url(/img/back-hero-home.jpg);
 	background-size: cover;
-	background-position: center -110vh;
+	background-position: center;
 	min-height: auto;
 	padding: 0;
 
@@ -162,6 +162,8 @@ section {
 		height: 610px;
 	}
 }
+
+
 
 
 .ui.button {
@@ -338,5 +340,13 @@ section {
 			display: none;
 
 		}
+	}
+
+	.sec-hero {
+		opacity: .5;
+	}
+
+	.owl-carousel {
+		display: none !important;
 	}
 }
