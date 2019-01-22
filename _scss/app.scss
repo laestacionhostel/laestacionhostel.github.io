@@ -32,6 +32,12 @@ body {
 	}
 }
 
+.offcanvas-logo {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+}
+
 .top-bar {
 	//display: flex;
 	//background: #fff;
@@ -220,7 +226,7 @@ section {
 	top: 0;
 	right: -310px;
 	z-index: 10;
-	background: #ff9a00;
+	background: #57a9d4;
 	bottom: 0;
 	width: 300px;
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -245,11 +251,11 @@ section {
 .sliding-panel-content {
   $action-color: #ddd !default;
   $dark-gray: #f9f9f9 !default;
-  $sliding-panel-border-color: #b17a26;
+  $sliding-panel-border-color: #346680;
   $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
   $sliding-panel-color: #fff;
   $sliding-panel-border: 1px solid $sliding-panel-border-color;
-  $sliding-panel-background-hover: #205436;
+  $sliding-panel-background-hover: #4c85a2;
   $sliding-panel-color-hover: #fff;
   $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
 
@@ -270,7 +276,7 @@ section {
 	//width: 220px;
 
   ul {
-    padding: 0;
+    padding: 25px 0 0 0;
     margin: 0;
   }
 
@@ -306,6 +312,9 @@ section {
 .sliding-panel-fade-screen {
   position: fixed;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: black;
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -369,7 +378,7 @@ section {
 		opacity: .5;
 	}
 
-	.owl-carousel, .social {
+	.owl-carousel, .social, .logo {
 		display: none !important;
 	}
 }
