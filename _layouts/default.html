@@ -12,6 +12,8 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 </head>
 <body>
 
@@ -26,13 +28,13 @@
       <li><a href="/contacto">contacto</a></li>
     </ul>
     <div class="offcanvas-social">
-      <a href="https://www.facebook.com/laestacionhostel/" target="_blank" title="Reservá por Facebook">
+      <a href="https://www.facebook.com/laestacionhostel/" target="_blank" class="tooltip" title="Reservá por Facebook">
         <i class="fa fa-facebook-square" aria-hidden="true"></i>
       </a>
-      <a href="https://www.instagram.com/laestacionhostel/" target="_blank" title="Fotos en instagram">
+      <a href="https://www.instagram.com/laestacionhostel/" target="_blank" class="tooltip" title="Fotos en instagram">
         <i class="fa fa-instagram" aria-hidden="true"></i>
       </a>
-      <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html?aid=1288287;label=metagha-link-localuniversalAR-hotel-2177587_dev-desktop_los-1_bw-14_dow-Sunday_defdate-1_room-0_lang-es_curr-ARS_gstadt-2_rateid-0_aud-0_cid-94;sid=0d5f99adc4ca203c969dbc23ba3bc022;all_sr_blocks=217758707_110523869_3_2_0;checkin=2019-02-03;checkout=2019-02-04;dest_id=-995376;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=217758707_110523869_3_2_0;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1548191718;srpvid=42a39573faa70528;type=total;ucfs=1&#hotelTmpl" target="_blank" title="Reservá por Booking">
+      <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html#tab-reviews" target="_blank" class="tooltip" title="Reservá por Booking">
         <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
       </a>
     </div>
@@ -64,7 +66,7 @@
         <a href="https://www.instagram.com/laestacionhostel/" target="_blank" title="Fotos en instagram">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
-        <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html?aid=1288287;label=metagha-link-localuniversalAR-hotel-2177587_dev-desktop_los-1_bw-14_dow-Sunday_defdate-1_room-0_lang-es_curr-ARS_gstadt-2_rateid-0_aud-0_cid-94;sid=0d5f99adc4ca203c969dbc23ba3bc022;all_sr_blocks=217758707_110523869_3_2_0;checkin=2019-02-03;checkout=2019-02-04;dest_id=-995376;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=217758707_110523869_3_2_0;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1548191718;srpvid=42a39573faa70528;type=total;ucfs=1&#hotelTmpl" target="_blank" title="Reservá por Booking">
+        <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html#tab-reviews" target="_blank" title="Reservá por Booking">
           <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
         </a>
       </div>
@@ -146,6 +148,12 @@
       rewind:true,
       margin: 0,
     })
+  </script>
+
+  <script>
+      $(document).ready(function() {
+          $('.tooltip').tooltipster();
+      });
   </script>
 
   {% include offcanvas.html %}
