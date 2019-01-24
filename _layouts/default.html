@@ -25,7 +25,22 @@
       <li><a href="/ubicacion">ubicacion</a></li>
       <li><a href="/contacto">contacto</a></li>
     </ul>
+    <div class="offcanvas-social">
+      <a href="https://www.facebook.com/laestacionhostel/" target="_blank" title="Reservá por Facebook">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/laestacionhostel/" target="_blank" title="Fotos en instagram">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html?aid=1288287;label=metagha-link-localuniversalAR-hotel-2177587_dev-desktop_los-1_bw-14_dow-Sunday_defdate-1_room-0_lang-es_curr-ARS_gstadt-2_rateid-0_aud-0_cid-94;sid=0d5f99adc4ca203c969dbc23ba3bc022;all_sr_blocks=217758707_110523869_3_2_0;checkin=2019-02-03;checkout=2019-02-04;dest_id=-995376;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=217758707_110523869_3_2_0;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1548191718;srpvid=42a39573faa70528;type=total;ucfs=1&#hotelTmpl" target="_blank" title="Reservá por Booking">
+        <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
+      </a>
+    </div>
   </div>
+
+  <button type="button" class="toogle-btn js-menu-trigger sliding-panel-button">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
 
   <div class="top-bar">
     <div class="top-bar-wrapper">
@@ -40,19 +55,17 @@
         <a href="#contacto">contacto</a>
       </nav>
 
-      <button type="button" class="toogle-btn js-menu-trigger sliding-panel-button">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
+    
 
       <div class="social">
-        <a href="https://www.facebook.com/laestacionhostel/" target="_blank">
+        <a href="https://www.facebook.com/laestacionhostel/" target="_blank" title="Reservá por Facebook">
           <i class="fa fa-facebook-square" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/laestacionhostel/" target="_blank" title="Fotos en instagram">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
         <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html?aid=1288287;label=metagha-link-localuniversalAR-hotel-2177587_dev-desktop_los-1_bw-14_dow-Sunday_defdate-1_room-0_lang-es_curr-ARS_gstadt-2_rateid-0_aud-0_cid-94;sid=0d5f99adc4ca203c969dbc23ba3bc022;all_sr_blocks=217758707_110523869_3_2_0;checkin=2019-02-03;checkout=2019-02-04;dest_id=-995376;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=217758707_110523869_3_2_0;hpos=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1548191718;srpvid=42a39573faa70528;type=total;ucfs=1&#hotelTmpl" target="_blank" title="Reservá por Booking">
-          <i class="fa fa-tags" aria-hidden="true"></i>
+          <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
         </a>
       </div>
     </div>
@@ -113,21 +126,25 @@
 
   <script>
     $('.owl-carousel').owlCarousel({
+      autoplay:true,
+      autoplayTimeout: 8000,
+      autoplayHoverPause:false,
       center: true,
       singleItem:true,
+      touchDrag: false,
       navigation : true, // Show next and prev buttons
       navigationText: [
       "<i class='fas fa-chevron-left'></i>",
       "<i class='fas fa-chevron-right'></i>"
       ],
       items:1,
-      autoplayHoverPause: false,
       autoHeight: false,
-      slideSpeed : 1000,
-      autoPlay: true,
-      paginationSpeed : 2000,
-      loop:true,
-      margin:10,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      slideSpeed : 8000,
+      paginationSpeed : 8000,
+      rewind:true,
+      margin: 0,
     })
   </script>
 
