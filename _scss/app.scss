@@ -381,6 +381,11 @@ section {
 	}
 }
 
+.tooltipster-default {
+	border: 0 none !important;
+	padding: 4px !important;
+}
+
 @media screen and (max-width: 800px) {
 	.sliding-panel-button {
 	    right: 0;

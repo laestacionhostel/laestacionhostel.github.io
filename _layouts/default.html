@@ -28,15 +28,7 @@
       <li><a href="/contacto">contacto</a></li>
     </ul>
     <div class="offcanvas-social">
-      <a href="https://www.facebook.com/laestacionhostel/" target="_blank" class="tooltip" title="Reservá por Facebook">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.instagram.com/laestacionhostel/" target="_blank" class="tooltip" title="Fotos en instagram">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-      </a>
-      <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html#tab-reviews" target="_blank" class="tooltip" title="Reservá por Booking">
-        <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
-      </a>
+      {% include social.html %}
     </div>
   </div>
 
@@ -56,19 +48,8 @@
         <a href="#ubicacion">ubicacion</a>
         <a href="#contacto">contacto</a>
       </nav>
-
-    
-
       <div class="social">
-        <a href="https://www.facebook.com/laestacionhostel/" target="_blank" title="Reservá por Facebook">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/laestacionhostel/" target="_blank" title="Fotos en instagram">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.booking.com/hotel/ar/la-estacion-hostel.es.html#tab-reviews" target="_blank" title="Reservá por Booking">
-          <img src="{{ site.baseurl }}/img/icon-booking.svg" width="20">
-        </a>
+       {% include social.html %}
       </div>
     </div>
   </div>
@@ -80,82 +61,11 @@
   <div class="js-menu-screen sliding-panel-fade-screen"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-  <script type="text/javascript">
-    $("[data-fancybox]").fancybox({
-      // Options will go here
-    });
-  </script>
-
-  <script>
-    // Select all links with hashes
-  $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-      // On-page links
-      if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
-        location.hostname == this.hostname
-      ) {
-        // Figure out element to scroll to
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        // Does a scroll target exist?
-        if (target.length) {
-          // Only prevent default if animation is actually gonna happen
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            // Callback after animation
-            // Must change focus!
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
-              return false;
-            } else {
-              $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-              $target.focus(); // Set focus again
-            };
-          });
-        }
-      }
-    });
-  </script>
-
-  <script>
-    $('.owl-carousel').owlCarousel({
-      autoplay:true,
-      autoplayTimeout: 8000,
-      autoplayHoverPause:false,
-      center: true,
-      singleItem:true,
-      touchDrag: false,
-      navigation : true, // Show next and prev buttons
-      navigationText: [
-      "<i class='fas fa-chevron-left'></i>",
-      "<i class='fas fa-chevron-right'></i>"
-      ],
-      items:1,
-      autoHeight: false,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
-      slideSpeed : 8000,
-      paginationSpeed : 8000,
-      rewind:true,
-      margin: 0,
-    })
-  </script>
-
-  <script>
-      $(document).ready(function() {
-          $('.tooltip').tooltipster();
-      });
-  </script>
-
+  
+  {% include fancybox.html %}
+  {% include scroll-to.html %}
+  {% include owl-carousel.html %}
+  {% include tooltipster.html %}
   {% include offcanvas.html %}
 
 </body>
