@@ -1,0 +1,99 @@
+$mobile: new-breakpoint(max-width 800px 4);
+
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 212px;
+	height: 100%;
+	z-index: 299;
+	background: rgba(72, 72, 72, 0.1);
+	bottom: 0;
+	-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+	transition: all .4s cubic-bezier(0.7,0,.3,1);
+
+	&:hover {
+		background: rgba(72, 72, 72, 0.3);
+	}
+
+	.top-bar-wrapper {
+		max-width: 1280px;
+		display: flex;
+		align-items: flex-end;
+		margin: 0 auto;
+		height: 70px;
+		padding: 0 25px;
+	}
+
+	.logo {
+		position: absolute;
+		top: 10px;
+		height: 90px;
+	}
+
+	nav {
+		
+		flex: 1;
+		text-align: left;
+		position: fixed;
+		top: 120px;
+		width: 173px;
+
+
+		a {
+			margin: 5px 15px 0 0;
+			text-decoration: none;
+			font-family: 'Kaushan Script', cursive;
+			color: #fff;
+			padding: 10px 0 10px 0;
+			font-size: 21px;
+			font-weight: 600;
+		    //border-bottom: 9px solid #fff;
+		    -webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		    -moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
+		    transition: all .4s cubic-bezier(0.7,0,.3,1);
+		    display: inline-block;
+		    position: relative;
+
+		    &:after {
+		    	background-color: #777;
+		    	//content: "";
+		    	display: inline-block;
+		    	height: 6px;
+		    	left: 0;
+		    	position: absolute;
+		    	bottom: -11px;
+		    	width: 0;
+		    	z-index: 1;
+		    	-webkit-transition: all 0.3s ease 0s;
+		    	transition: all 0.3s ease 0s;
+		    }
+
+			&:hover {
+				//border-bottom: 9px solid #157A40;
+				color: #f9f9f9;
+
+				&:after {
+					width: 100%;
+					background-color: #11999e;
+				}
+			}
+
+
+
+			&:focus, &:active {
+				color: #f9f9f9;
+
+				&:after {
+					background-color: #11999e;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	
+
+}
