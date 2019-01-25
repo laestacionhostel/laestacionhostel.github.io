@@ -90,6 +90,23 @@ body {
 		opacity: 1;
 	}
 
+	.photo-album {
+		a {
+			width: 48%;
+			margin: 1%;
+
+			img {
+				width: 100%	
+			}
+		}
+
+
+	}
+
+	section {
+		padding: 1em;
+	}
+
 	.owl-carousel, .social, .logo {
 		display: none !important;
 	}
