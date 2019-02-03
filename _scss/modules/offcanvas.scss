@@ -142,7 +142,7 @@ $mobile: new-breakpoint(max-width 800px 4);
 	position: fixed;
 	right: -60px;
 	top: 16px;
-	z-index: 99999;
+	z-index: 9999;
 	-webkit-transition: all .4s cubic-bezier(0.7,0,.3,1);
 	-moz-transition: all .4s cubic-bezier(0.7,0,.3,1);
 	transition: all .4s cubic-bezier(0.7,0,.3,1);
