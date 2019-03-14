@@ -10,7 +10,9 @@ $main-font: 'Alegreya Sans', sans-serif;
 @import 'modules/animated';
 @import 'modules/animated-headline';
 @import 'modules/top-bar';
+@import 'pages/fullpage';
 @import 'pages/home';
+@import 'pages/internal';
 
 
 .owl-carousel {
@@ -35,22 +37,7 @@ body {
 	padding: 0 0 0 0;
 } 
 
-.social {
-	position: fixed;
-	right: 0;
-	padding: 15px;
-	top: 10px;
-	width: 162px;
-	text-align: left;
 
-	a {
-		margin: 0 10px;
-		color: #fff;
-		text-decoration: none;
-		font-size: 25px;
-
-	}
-}
 
 
 
@@ -72,7 +59,7 @@ body {
 	}
 
 	.top-bar {
-		display: none;
+		//display: none;
 	}
 
 	.top-bar-wrapper {
@@ -107,7 +94,14 @@ body {
 		padding: 1em;
 	}
 
-	.owl-carousel, .social, .logo {
+	.owl-carousel, .social {
 		display: none !important;
+	}
+
+	.logo {
+		top: 10px;
+		img {
+			width: 250px;
+		}
 	}
 }

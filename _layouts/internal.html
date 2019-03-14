@@ -63,20 +63,20 @@
         <img src="{{ site.baseurl }}/img/logo-la-estacion-hostel.svg" width="310px">
       </a>
       <nav id="menu-superior" class="menu menu--yona">
-        <div data-menuanchor="inicio" class="menu__item active">
-          <a class="menu__item-name" href="#inicio">Inicio</a>
+        <div data-menuanchor="inicio" class="menu__item">
+          <a class="menu__item-name" href="/">Inicio</a>
         </div>
         <div data-menuanchor="alojamiento" class="menu__item">
-          <a class="menu__item-name" href="#alojamiento">Habitaciones</a>
+          <a class="menu__item-name" href="../#alojamiento">Habitaciones</a>
         </div>
         <div data-menuanchor="lago-puelo" class="menu__item">
-          <a class="menu__item-name" href="#lago-puelo">Lago Puelo</a>
+          <a class="menu__item-name" href="/lago-puelo">Lago Puelo</a>
         </div>
         <div data-menuanchor="ubicacion" class="menu__item">
-          <a class="menu__item-name" href="#ubicacion">Ubicación</a>
+          <a class="menu__item-name" href="../#ubicacion">Ubicación</a>
         </div>
         <div data-menuanchor="contacto" class="menu__item">
-          <a class="menu__item-name" href="#contacto">Contacto</a>
+          <a class="menu__item-name" href="../#contacto">Contacto</a>
         </div>
       </nav>
 
@@ -84,9 +84,9 @@
     </div>
   </div>
 
-  <div class="main-container">
+  <div class="main-container internal">
     <div class="book-now-container">
-      <a href="#contacto" class="ui button tiny orange book-now">
+      <a href="/contacto" class="ui button tiny orange book-now">
         <i class="fa fa-ticket" aria-hidden="true"></i>reservas
       </a>
     </div>
@@ -94,11 +94,6 @@
     {{content}}
   </div>
 
-  <footer>
-    <a class="logo logo-foot" href="/">
-      <img src="{{ site.baseurl }}/img/logo-la-estacion-hostel.svg" width="210px">
-    </a> <br>
-  </footer>
 
   <div class="js-menu-screen sliding-panel-fade-screen"></div>
 
