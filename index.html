@@ -6,11 +6,14 @@ layout: default
 <div id="fullpage">
 	<section class=" sec-hero section fp-noscroll" data-anchor="inicio" >
 		<div class="inner-wrapper">
-			<div class="hero-heading ">
-				<h1 class="cd-headline rotate-1">
+			<div class="hero-heading  ">
+				<h1 class="cd-headline rotate-1 animated fadeIn delay-1s">
 					<span style="font-size: 25px; display: none;">La estación Hostel</span> <br>
 					<span class="cd-words-wrapper">
 						<b class="is-visible">
+							Bienvenida 
+						</b>
+						<b>
 							Bienvenido 
 						</b>
 						<b>
@@ -31,8 +34,8 @@ layout: default
 					</span> <br>
 					
 				</h1>
-				<p class="animated fadeIn delay-2s" style="text-align: center;margin: 0;z-index: 1;position: relative;">
-					<span style="text-align: center; ">un espacio en Lago Puelo</span> <br>
+				<p class="animated fadeIn delay-1s" style="text-align: center;margin: 0;z-index: 1;position: relative;">
+					<span style="text-align: center; ">a una estación en Lago Puelo</span> <br>
 				</p>
 			</div>
 			<div class="owl-carousel owl-theme">
@@ -51,7 +54,7 @@ layout: default
 			</div>
 		</div>
 	</section>
-	<section class="sec-alojamiento section " id="el-alojamiento" data-anchor="alojamiento" style="background: rgba(17, 153, 158, 0.8);">
+	<section class="sec-alojamiento section fp-auto-height" id="el-alojamiento" data-anchor="alojamiento" style="background: rgba(17, 153, 158, 0.8);">
 		<div class="inner-wrapper">
 		<h2 style="text-align: center;">Habitaciones</h2>
 
@@ -188,12 +191,13 @@ layout: default
       $('#fullpage').fullpage({
         verticalCentered: true,
         css3:true,
-        scrollingSpeed: 1000,
+        scrollingSpeed: 1300,
         autoScrolling: true,
         dragAndMove: false,
         navigation: false,
         continuousVertical: false,
         bigSectionsDestination: 'top',
+        normalScrollElementTouchThreshold: 5,
         menu: '#menu-superior',
         anchors:['inicio', 'alojamiento', 'lago-puelo', 'ubicacion', 'contacto'],
         slidesNavPosition: 'bottom',
