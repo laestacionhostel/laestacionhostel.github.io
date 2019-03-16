@@ -1,0 +1,28 @@
+
+.booking-container {
+	display: flex;
+	margin-top: 80px;
+
+	.item {
+		width: 31%;
+		color: #fff;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+
+		img {
+			margin-top: 8px;
+		}
+
+		b {
+			margin-top: 15px;
+			display: block;
+		}
+
+		.fa {
+			font-size: 78px;
+		}
+	}
+}

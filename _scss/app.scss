@@ -5,41 +5,36 @@ $main-font: 'Alegreya Sans', sans-serif;
 
 @import 'plugins/bourbon/bourbon';
 @import 'plugins/neat/neat';
+@import 'plugins/owl-carousel';
+@import 'plugins/fullpage';
+@import 'plugins/animated';
+@import 'plugins/tooltipster';
 @import 'modules/offcanvas';
+@import 'modules/booking';
 @import 'modules/footer';
-@import 'modules/animated';
+@import 'modules/headroom';
 @import 'modules/animated-headline';
 @import 'modules/top-bar';
-@import 'pages/fullpage';
 @import 'pages/home';
+@import 'pages/lago-puelo';
+@import 'pages/alojamiento';
+@import 'pages/ubicacion';
+@import 'pages/contacto';
 @import 'pages/internal';
 
 ::-moz-selection { /* Code for Firefox */
-  color: red;
-  background: #fff;
+  color: #6a2c70;
+  background: #f08a5d;
 }
 
 ::selection {
-  color: red;
-  background: #fff;
+  color: #6a2c70;
+  background: #f08a5d;
 }
 
-.featured-image {
-	max-height: 400px;
-	overflow: hidden;
 
-	img {
 
-	}
-}
 
-.owl-carousel {
-	background: #333;
-
-	.owl-stage-outer {
-		opacity: .5;
-	}
-}
 
 .none {
 	display: none;
@@ -65,10 +60,7 @@ body {
 
 
 
-.tooltipster-default {
-	border: 0 none !important;
-	padding: 4px !important;
-}
+
 
 @media screen and (max-width: 800px) {
 	.sliding-panel-button {
@@ -112,7 +104,7 @@ body {
 		padding: 1em;
 	}
 
-	.owl-carousel, .social {
+	.social {
 		display: none !important;
 	}
 
