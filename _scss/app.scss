@@ -64,8 +64,17 @@ body {
 
 @media screen and (max-width: 800px) {
 	.sliding-panel-button {
-	    right: 0;
-	    top: 16px;
+		right: 10px;
+		top: 8px;
+		color: #fff !important;
+	}
+	
+	.sliding-panel-button-internal {
+		color: #333 !important;
+	}
+
+	.headroom--top .sliding-panel-button-internal {
+		color: #fff !important;
 	}
 
 	.top-bar {

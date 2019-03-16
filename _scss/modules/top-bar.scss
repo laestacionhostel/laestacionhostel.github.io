@@ -145,6 +145,17 @@ $mobile: new-breakpoint(max-width 800px 4);
 			padding: 10px 0;
 		}
 
+		
+
+		@media screen and (max-width: 1100px) {
+			padding-left: 49px;
+			justify-content: flex-end;
+
+			.menu__item-home {
+				//display: none;
+			}
+		}
+
 		a {
 			  color: #fff;
 			  font-weight: 400;
